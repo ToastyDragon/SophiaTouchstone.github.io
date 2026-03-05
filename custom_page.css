@@ -6,15 +6,105 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+  background-color: #fff7ee;
+}
+/* vvv */
+footer {
+    padding: 1em; 
+    bottom: 0;
+    text-align: center;
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
+.footer-list li{
+    display: inline;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    color:#f2f2f2;
+}
+
+#footer-logo {
+  margin: 0 auto;
+}
+
+/* nav */
+.topnav {
+  overflow: hidden;
+  background-color: #234057;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #ee583f;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.topnav a:hover {
+  background-color: #fff7ee;
+  color: #2e4057;
+  transition: 200ms;
+}
+
+.active {
+  background-color: #fff7ee;
+  color: #2e4057;
+}
+
+/* end nav */
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.headers {
+  text-align: center;
+  font-size: 35px;
+}
+/* ^^^ */
+.custom-pg-sec {
+  display: inline-flex;
+  max-width: 100%;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
+  margin: 0 1.25em 0 1.25em;
+}
+
+.margins {
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
+
+@media only screen and (max-width: 768px) {
+  .div-cont {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .custom-pg-sec {
+    display: inline;
+    text-align: center;
+  }
+
+  #res-mar {
+    margin: 0 2.5em 0 2.5em;
+  }
 }

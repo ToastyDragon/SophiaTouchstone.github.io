@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Custom Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="custom_page.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
 
   <body>
-
-     <nav>
-     <a href="./index.html"><img src="./assets/Client3_LogoPalette1_2E4057.png" height="28" width="28"></a>
-     <a href="./gallery_page.html">Gallery</a>
-     <a href="./about_us.html">About Us</a>
-     <a href="./custom_page.html">More</a>
-     <button><i class="fa-solid fa-bars"></i></button>
-    </nav>
-
-    <div>
-      <div>
-      <h2>Customer Testimonials</h2>
-      </div>
-      <div>
+<div class="wrapper">
+  <!-- nav -->
+  <div class="topnav">
+    <a href="./index.html" class="active"><img src="./assets/Client3_LogoPalette1_2E4057.png" height="28" width="28"></a>
+    <div id="myLinks">
+      <a href="./gallery_page.html">Gallery</a>
+      <a href="./about_us.html">About Us</a>
+      <a href="./custom_page.html">More</a>
+      <a href="#">View Cart</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    <div class="div-cont">
+      <h2 class="headers">Customer Testimonials</h2>
+      <div class="custom-pg-sec">
+      <div class="margins">
         <h3>Customer Testimonial #1</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
       </div>
-      <div>
+      <div class="margins">
         <h3>Customer Testimonial #2</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
       </div>
+      </div>
     </div>
 
-    <div>
-    <div>
-    <h2>Community Involvement</h2>
-    </div>
-    <div>
+    <div class="div-cont">
+    <h2 class="headers">Community Involvement</h2>
+    <div class="custom-pg-sec">
+    <div class="margins">
       <h3>Goal to Amplify Visibility</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
     </div>
-    <div>
+    <div class="margins">
       <h3>Cultivating a Vibrant Literary Community</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
     </div>
-    <div>
+    <div class="margins">
       <h3>Simplify the Process of Book Inquiries and Purchases</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
     </div>
     </div>
+    </div>
 
-    <div>
-      <h2>Events</h2>
+    <div id="res-mar" class="div-cont margins">
+      <h2 class="headers">Events</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p><br>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
     </div>
 
     <footer>
-    <img src="./assets/Client3_LogoPalette1_2E4057.png" height="35" width="35">
-    <a href="./gallery_page.html">Gallery</a>
-    <a href="./about_us.html">About Us</a>
-    <a href="./custom_page.html">More</a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <p><i class="fa-regular fa-copyright"></i>2025 Book Haven Bookstore. All rights reserved.</p>
-  </footer>
+      <ul class="footer-list">
+      <li><img id="footer-logo" src="./assets/Client3_LogoPalette1_2E4057.png" height="30" width="30"></li>
+      <li><a href="./gallery_page.html">Gallery</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+      <li><a href="./custom_page.html">More</a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      </ul>
+      <p><i class="fa-regular fa-copyright"></i>2025 Book Haven Bookstore. All rights reserved.</p>
+    </footer>
+
+</div>
   </body>
 </html>
