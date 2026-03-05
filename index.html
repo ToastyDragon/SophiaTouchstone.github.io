@@ -5,51 +5,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
 
   <body>
 <div class="wrapper">
-     <nav>
-      <div class="left-link">
-     <a class="nav-links" href="./index.html"><img src="./assets/Client3_LogoPalette1_2E4057.png" height="28" width="28"></a>
-      </div>
-      <div class="right-link">
-     <a class="nav-links" href="./gallery_page.html">Gallery</a>
-     <a class="nav-links" href="./about_us.html">About Us</a>
-     <a class="nav-links" href="./custom_page.html">More</a>
-     <button><i class="fa-solid fa-bars"></i></button>
-     </div>
-    </nav>
-
+  <!-- nav -->
+  <div class="topnav">
+    <a href="./index.html" class="active"><img src="./assets/Client3_LogoPalette1_2E4057.png" height="28" width="28"></a>
+    <div id="myLinks">
+      <a href="./gallery_page.html">Gallery</a>
+      <a href="./about_us.html">About Us</a>
+      <a href="/custom_page.html">More</a>
+      <a href="#">View Cart</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
     <main>
 
     <div>
       <img id="home-pg-img" src="./assets/WEBDEV445_c.png">
     </div>
-    <div>
-    <h2>Specials</h2>
-    <img src="./assets/Client3_Book1.png" height="100" width="180">
-    <p>New Released Books!</p>
-    <img src="./assets/Client3_Magazine2.png" height="100" width="180">
-    <p>Popular Magazines!</p>
-    <img src="./assets/Client3_ToteBag.png" height="100" width="180">
-    <p>Clearance Items!</p>
+    <!--Specials Section-->
+    <div id="special-sec">
+    <h2 class="headers">Specials</h2>
+      <div class="special-sec ">
+        <img class="special-left-sec responsive-img" src="./assets/Client3_Book1.png" height="280" width="500">
+        <p class="special-right-sec">New Released Books!<br> Come check out 
+          the most anticipated books of the year before they are sold out!</p>
+      </div>
+      <div id="special-mid-sec" class="special-sec">
+        <p id="element-a" class="special-left-sec" >Popular Magazines!<br> See whats trending in our catelog of 
+          magazines through our gallery page!</p>
+        <img id="element-b" class="special-right-sec responsive-img" src="./assets/Client3_Magazine2.png" height="280" width="500">
+      </div>
+      <div class="special-sec">
+        <img class="special-left-sec responsive-img" src="./assets/Client3_ToteBag.png" height="280" width="500">
+        <p class="special-right-sec">Clearance Items!<br> Purchase your items for sale 
+          before they sell out quick!</p>
+      </div>
     </div>
-
-    <div>
-      <h2>Our Commitment</h2>
+    <!--Our Commitment Section-->
+    <div id="our-commitment-sec">
+      <h2 class="headers" >Our Commitment</h2>
       <p>We're committed to serving a broad audience of book lovers and knowledge seekers by amplifying our visibility.</p>
       <p>We strive to create a vibrant community by encouraging literary exploration and a love for reading for everyone.</p>
       <p>We simplify the process of book inquiries and purchases by creating an online presence that mirrors it's dedication to the worlds of words.</p>
     </div>
-
-    <div>
-      <h2>Shop By Category</h2>
+    <!--Shop By Category Section-->
+    <div id="category-sec" class="div-content">
+      <h2 class="headers" >Shop By Category</h2>
       <a href="./gallery_page.html">Romantic</a>
       <a href="./gallery_page.html">Fantasy</a>
-      <a href="./gallery_page.html">Food</a>
+      <a href="./gallery_page.html">Food</a><br>
       <a href="./gallery_page.html">Sports</a>
       <a href="./gallery_page.html">Travel</a>
       <a href="./gallery_page.html">Other</a>
@@ -58,15 +70,17 @@
     </main>
 
     <footer>
-      <img src="./assets/Client3_LogoPalette1_2E4057.png" height="35" width="35">
-      <a href="./gallery_page.html">Gallery</a>
-      <a href="./about_us.html">About Us</a>
-      <a href="./custom_page.html">More</a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
+      <ul class="footer-list">
+      <li><img id="footer-logo" src="./assets/Client3_LogoPalette1_2E4057.png" height="30" width="30"></li>
+      <li><a href="./gallery_page.html">Gallery</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+      <li><a href="./custom_page.html">More</a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      </ul>
       <p><i class="fa-regular fa-copyright"></i>2025 Book Haven Bookstore. All rights reserved.</p>
     </footer>
   </div>
