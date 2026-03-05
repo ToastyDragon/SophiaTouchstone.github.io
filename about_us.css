@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+  background-color: #fff7ee;
 }
 
 nav {
@@ -44,9 +44,129 @@ input[type='submit']:hover {
   background-color: #394F6B;
 }
 
+/* vvv */
+footer {
+    padding: 1em; 
+    bottom: 0;
+    text-align: center;
+}
+
+.footer-list li{
+    display: inline;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    color:#f2f2f2;
+}
+
+#footer-logo {
+  margin: 0 auto;
+}
+
+/* nav */
+.topnav {
+  overflow: hidden;
+  background-color: #234057;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #ee583f;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.topnav a:hover {
+  background-color: #fff7ee;
+  color: #2e4057;
+  transition: 200ms;
+}
+
+.active {
+  background-color: #fff7ee;
+  color: #2e4057;
+}
+
+/* end nav */
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.about-us-sec {
+  text-align: center;
+  align-items: center;
+}
+
+.headers {
+  text-align: center;
+  font-size: 35px;
+}
+
 .container {
+  display: inline-block;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   max-width: 600px;
+}
+
+#submit {
+  width: 100%;
+}
+
+#about-us {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.store-hours-container{
+  display:block;
+  width: 292px;
+  text-align:left;
+  margin:0 auto;
+  padding:.2em 2em .2em 2em;
+  background-color:rgba(0,0,0,.02);
+  border:2px solid rgba(0,0,0,.04);
+  border-radius:12px;
+}
+
+.weekdays, .store-hours{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:inline;
+}
+
+.weekdays li{
+  margin: .3em 0;
+  font-weight:bold;
+}
+
+.store-hours{
+  float:right;
+}
+
+.store-hours li{
+  text-align:right;
+  font-weight:400;
+  display:inline;
+  padding:0 .5em;
 }

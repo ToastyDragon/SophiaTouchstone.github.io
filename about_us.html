@@ -5,36 +5,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="about_us.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
 
   <body>
+<div class="wrapper">
+  <!-- nav -->
+  <div class="topnav">
+    <a href="./index.html" class="active"><img src="./assets/Client3_LogoPalette1_2E4057.png" height="28" width="28"></a>
+    <div id="myLinks">
+      <a href="./gallery_page.html">Gallery</a>
+      <a href="./about_us.html">About Us</a>
+      <a href="./custom_page.html">More</a>
+      <a href="#">View Cart</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-     <nav>
-     <a href="./index.html"><img src="./assets/Client3_LogoPalette1_2E4057.png" height="28" width="28"></a>
-     <a href="./gallery_page.html">Gallery</a>
-     <a href="./about_us.html">About Us</a>
-     <a href="./custom_page.html">More</a>
-     <button><i class="fa-solid fa-bars"></i></button>
-    </nav>
-
-    <div>
-      <h2>About Us</h2>
-      <p>Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books, magazines, journals, and office supplies. With a deep-rooted commitment to fostering literary exploration and a love for reading, it is embarking on the creation of an online presence that mirrors its dedication to the world of words. Serving a broad audience of book lovers and knowledge seekers, its central goal is to amplify its visibility, cultivate a vibrant literary community, and simplify the process of book inquiries and purchases. Its target audience comprises avid readers, students, and individuals in search of high-quality reading materials and office essentials. Book Haven Bookstore’s website theme revolves around celebrating the written word, creating an inviting digital space that encourages literary discovery, and supporting intellectual growth.</p>
+    <div class="about-us-sec">
+      <h2 class="headers">About Us</h2>
+      <p id="about-us">Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books, magazines, journals, and office supplies. With a deep-rooted commitment to fostering literary exploration and a love for reading, it is embarking on the creation of an online presence that mirrors its dedication to the world of words. Serving a broad audience of book lovers and knowledge seekers, its central goal is to amplify its visibility, cultivate a vibrant literary community, and simplify the process of book inquiries and purchases. Its target audience comprises avid readers, students, and individuals in search of high-quality reading materials and office essentials. Book Haven Bookstore’s website theme revolves around celebrating the written word, creating an inviting digital space that encourages literary discovery, and supporting intellectual growth.</p>
     </div>
 
-    <div>
-      <h2>Business Hours</h2>
-      <ul>
-        <li>Monday-Friday: 9 a.m. to 8 p.m.</li>
-        <li>Saturday: 10 a.m. to 6 p.m.</li>
-        <li>Sunday: 11 a.m. to 5 p.m.</li>
-      </ul>
-    </div>
+      <h2 class="headers">Business Hours</h2>
+<div class="store-hours-container">
 
-    <div>
-      <h2>Contact Us</h2>
+<ul class="weekdays">
+  <li>Sun
+    <ul class="store-hours">
+      <li>11:00 AM</li>
+      <li>5:00 PM</li>
+    </ul>
+  </li>
+  <li>Mon
+    <ul class="store-hours">
+      <li>9:00 AM</li>
+      <li>8:00 PM</li>
+    </ul>
+  </li>
+  <li>Tue
+    <ul class="store-hours">
+      <li>9:00 AM</li>
+      <li>8:00 PM</li>
+    </ul>
+  </li>
+  <li>Wed
+    <ul class="store-hours">
+      <li>9:00 AM</li>
+      <li>8:00 PM</li>
+    </ul>
+  </li>
+  <li>Thu
+    <ul class="store-hours">
+      <li>9:00 AM</li>
+      <li>8:00 PM</li>
+    </ul>
+  </li>
+  <li>Fri
+    <ul class="store-hours">
+      <li>9:00 AM</li>
+      <li>8:00 PM</li>
+    </ul>
+  </li>
+  <li>Sat
+    <ul class="store-hours">
+      <li>10:00 AM</li>
+      <li>6:00 PM</li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+    <div class="about-us-sec">
+      <h2 class="headers">Contact Us</h2>
       <div class="container">
       <form action="/action_page.php">
         <label for="fname">First Name</label>
@@ -46,22 +92,25 @@
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
     
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit">
       </form>
     </div>
     </div>
 
     <footer>
-    <img src="./assets/Client3_LogoPalette1_2E4057.png" height="35" width="35">
-    <a href="./gallery_page.html">Gallery</a>
-    <a href="./about_us.html">About Us</a>
-    <a href="./custom_page.html">More</a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <p><i class="fa-regular fa-copyright"></i>2025 Book Haven Bookstore. All rights reserved.</p>
-  </footer>
+      <ul class="footer-list">
+      <li><img id="footer-logo" src="./assets/Client3_LogoPalette1_2E4057.png" height="30" width="30"></li>
+      <li><a href="./gallery_page.html">Gallery</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+      <li><a href="./custom_page.html">More</a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      </ul>
+      <p><i class="fa-regular fa-copyright"></i>2025 Book Haven Bookstore. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
