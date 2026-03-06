@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="about_us.css" />
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
 
@@ -82,17 +81,17 @@
     <div class="about-us-sec">
       <h2 class="headers">Contact Us</h2>
       <div class="container">
-      <form action="/action_page.php">
+      <form id="form" action="/action_page.php">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" required ="fname" name="firstname" placeholder="Your name..">
     
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" required id="lname" name="lastname" placeholder="Your last name..">
     
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
     
-        <input type="submit" value="Submit" id="submit">
+        <input type="submit" required value="Submit" id="submit">
       </form>
     </div>
     </div>
@@ -103,6 +102,7 @@
       <li><a href="./gallery_page.html">Gallery</a></li>
       <li><a href="./about_us.html">About Us</a></li>
       <li><a href="./custom_page.html">More</a></li>
+      <li><button id="subscribe-btn" class="sub-btn"><i id="sub-icon" class="fa-regular fa-envelope"></i>Subscribe</button></li>
       <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
       <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
       <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -112,5 +112,6 @@
       <p><i class="fa-regular fa-copyright"></i>2025 Book Haven Bookstore. All rights reserved.</p>
     </footer>
   </div>
+      <script src="script.js"></script>
 </body>
 </html>

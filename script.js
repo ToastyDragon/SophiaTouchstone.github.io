@@ -21,3 +21,26 @@ function setFirstChild() {
 }
 window.onload = setFirstChild;
 window.matchMedia(mobile).addEventListener("change", setFirstChild);
+
+//subscribe button on footer on every page 
+document.getElementById("subscribe-btn").addEventListener("click", function() {
+    alert("Thank you for subscribing.");
+});
+
+//alert message for buttons on gallery page
+function addToCart() {
+    alert("Item added to the cart.");
+}
+
+function clearCart() {
+    alert("Cart cleared.");
+}
+
+function processOrder() {
+    alert("Thank you for your order.");
+}
+
+// contact form alert message
+document.getElementById("form").addEventListener("submit", function() {
+    alert("Thank you for your message.");
+});

@@ -15,6 +15,34 @@ footer {
     text-align: center;
 }
 
+button {
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 17px;
+  margin-top: .4em;
+  border-radius: 6px;
+}
+
+#sub-icon {
+  margin-right: 0.5em;
+}
+
+#subscribe-btn {
+  background-color: #f7b3cc;
+  border: 2px solid #f7b3cc;  
+  color: #2e4057;
+}
+
+#subscribe-btn:hover {
+  background-color: #fff7ee;
+  border: 2px solid #f7b3cc;  
+  color: #2e4057;
+  transition: 130ms;
+}
+
+
 .footer-list li{
     display: inline;
     font-size: 16px;
