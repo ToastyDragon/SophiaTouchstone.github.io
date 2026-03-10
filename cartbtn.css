@@ -28,3 +28,15 @@
    padding-top: 10px;
    padding-bottom: 10px;
 }
+.cart-button {
+    background-color: #ee583f; 
+    border:2px solid #ee583f; 
+    color: #fff7ee;
+}
+
+.cart-button:hover {
+  background-color: #fff7ee;
+  color: #2e4057;
+  transition: 130ms;
+  border: 2px solid #ee583f;
+}
