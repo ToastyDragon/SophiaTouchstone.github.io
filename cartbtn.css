@@ -19,4 +19,12 @@
   padding: 50px;
   border: 1px solid #888;
   width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#cart-items li{
+   list-style-type: none;
+   font-family: Arial, Helvetica, sans-serif; 
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
