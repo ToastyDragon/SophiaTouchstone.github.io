@@ -18,7 +18,7 @@
       <a href="./about_us.html">About Us</a>
       <a href="./custom_page.html">More</a>
       <!-- -->
-      <a href="#">View Cart</a>
+      <a href="#" id="view-cart-button">View Cart</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -32,17 +32,17 @@
   <div class="gallery-sec">
   
 <img src="./assets/Client3_Book1.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<button class="add-to-cart" onclick="addToCart('Brie Mine 4Ever'); addToCartAlert();" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
 <p><b class="product-title">Brie Mine 4Ever</b><br>A book for cheese lovers</p>
       
       
 <img src="./assets/Client3_Book2.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<button class="add-to-cart" onclick="addToCart('Glory Riders')" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
 <p><b class="product-title">Glory Riders</b><br>A book about bikers</p>
     
 
 <img src="./assets/Client3_Book3.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<button class="add-to-cart" onclick="addToCart('Sorcerers Shadowed Chronicles')" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
 <p><b class="product-title">Sorcerer's Shadowed Chronicles</b><br>A fantasy book</p>
     
 
@@ -50,17 +50,17 @@
 <div class="gallery-sec">
 
 <img src="./assets/Client3_Magazine1.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<button class="add-to-cart" onclick="addToCart('Ball')" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
 <p><b class="product-title">Ball</b><br>A magazine about pickleball</p>
     
 
 <img src="./assets/Client3_Magazine2.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<button class="add-to-cart" onclick="addToCart('Travel')" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
 <p><b class="product-title">Travel</b><br>A magazine for travelers</p>
     
 
 <img src="./assets/Client3_Magazine3.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<button class="add-to-cart" onclick="addToCart('Eat')" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
 <p><b class="product-title">Eat</b><br>A magazine for foodies</p>
     
 </div>
@@ -68,26 +68,41 @@
 <div class="gallery-sec">
 
 <img src="./assets/Client3_Notebook.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
-<p><b class="product-title">ALL I DO IS READ READ READ</b><br>A canvas tote bag with black lettering</p>
+<button class="add-to-cart" onclick="addToCart('Book Haven Bookstore Notebook')" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<p><b class="product-title">Book Haven Bookstore Notebook</b><br>A notebook with text on the cover</p>
   
 
 <img src="./assets/Client3_Stickers.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
-<p><b class="product-title">Book Haven Bookstore</b><br>A notebook with text on the cover</p>
+<button class="add-to-cart" onclick="addToCart('Book Haven Bookstore Stickers')" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<p><b class="product-title">Book Haven Bookstore Stickers</b><br>A set of 4 stickers that promote reading</p>
     
 
 <img src="./assets/Client3_ToteBag.png" class="gal-img">
-<button class="add-to-cart" onclick="addToCart()" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
-<p><b class="product-title">Book Haven Bookstore Stickers</b><br>A set of 4 stickers that promote reading</p>
+<button class="add-to-cart" onclick="addToCart('ALL I DO IS READ READ READ')" ><i class="fa-solid fa-cart-shopping" style="margin-right:10px"></i>Add to Cart</button>
+<p><b class="product-title">ALL I DO IS READ READ READ</b><br>A canvas tote bag with black lettering</p>
     
   </div>
   </div>
 
+  
+<div id="cart-modal" class="modal">
+      
+      <div class="modal-content">
+        <span class="close" id="close-cart-modal">×</span>
+        <h3>Your Cart</h3>
+        <br>
+        <ul id="cart-items"></ul>
+        <br>
+        <br>
+        <button id="clear-cart-button" class="cart-button">Clear Cart</button>
+        <button id="process-order-button" class="cart-button">Process Order</button>
+      </div>
+    </div>
+
+
   <div id="btns">
-  <button class="cart-btns" onclick="clearCart()"><i class="fa-solid fa-eraser" style="margin-right:10px"></i>Clear Cart</button>
   <button class="cart-btns" onclick="processOrder()"><i class="fa-solid fa-circle-right" style="margin-right:10px"></i>Process Order</button>
-  </div>
+  </div> 
 </main>
 
     <footer>
@@ -107,5 +122,6 @@
     </footer>
   </div>
   <script src="script.js"></script>
+  <script src="cartmodal.js"></script>
   </body>
 </html>

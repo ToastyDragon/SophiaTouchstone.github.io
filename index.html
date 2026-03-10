@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cartbtn.css" />
 
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
@@ -18,7 +19,7 @@
       <a href="./gallery_page.html">Gallery</a>
       <a href="./about_us.html">About Us</a>
       <a href="./custom_page.html">More</a>
-      <a href="#">View Cart</a>
+      <a href="#" id="view-cart-button">View Cart</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -66,6 +67,20 @@
       <a href="./gallery_page.html">Travel</a>
       <a href="./gallery_page.html">Other</a>
     </div>
+    <div id="cart-modal" class="modal">
+      
+      <div class="modal-content">
+        <span class="close" id="close-cart-modal">×</span>
+        <h3>Your Cart</h3>
+        <br>
+        <ul id="cart-items"></ul>
+        <br>
+        <br>
+        <button id="clear-cart-button" class="cart-button">Clear Cart</button>
+        <button id="process-order-button" class="cart-button">Process Order</button>
+      </div>
+    </div>
+
 </div>
     </main>
 <!-- vvv -->
@@ -86,6 +101,8 @@
     </footer>
   </div>
 <!-- ^^^ -->
+ 
      <script src="script.js"></script>
+       <script src="cartmodal.js"></script>
   </body>
 </html>
