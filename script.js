@@ -30,3 +30,22 @@ document.getElementById("subscribe-btn").addEventListener("click", function() {
 function processOrder() {
     alert("Thank you for your order.");
 }
+
+function submitForm()
+{
+            const fname = document.getElementById("fname").value;
+            const lname = document.getElementById("lname").value;
+            const subject = document.getElementById("subject").value;
+
+            const customerInfo = {
+                    fname, lname, subject
+            };
+	
+            const keyValue = fname;
+            //save customer information to localStorage
+            localStorage.setItem(keyValue, JSON.stringify(customerInfo));
+                
+            //access and parse local data back out of localStorage. 
+            const who = JSON.parse( localStorage.getItem(fname) );
+            alert("Thank you for your message, "+ who.fname +"!");
+}
