@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
+  color: #131c26;
   background-color: #fff7ee;
 }
 
@@ -100,7 +100,7 @@ footer {
 
 .active {
   background-color: #fff7ee;
-  color: #2e4057;
+  color: #131c26;
 }
 
 /* end nav */
@@ -185,13 +185,13 @@ button {
 #subscribe-btn {
   background-color: #f7b3cc;
   border: 2px solid #f7b3cc;  
-  color: #2e4057;
+  color: #131c26;
 }
 
 #subscribe-btn:hover {
   background-color: #fff7ee;
   border: 2px solid #f7b3cc;  
-  color: #2e4057;
+  color: #131c26;
   transition: 130ms;
 }
 

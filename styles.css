@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
+  color: #131c26;
   background-color: #fff7ee;
 }
 /* vvv */
@@ -32,13 +32,13 @@ button {
 #subscribe-btn {
   background-color: #f7b3cc;
   border: 2px solid #f7b3cc;  
-  color: #2e4057;
+  color: #131c26;
 }
 
 #subscribe-btn:hover {
   background-color: #fff7ee;
   border: 2px solid #f7b3cc;  
-  color: #2e4057;
+  color: #131c26;
   transition: 130ms;
 }
 
@@ -86,13 +86,13 @@ button {
 
 .topnav a:hover {
   background-color: #fff7ee;
-  color: #2e4057;
+  color: #131c26;
   transition: 200ms;
 }
 
 .active {
   background-color: #fff7ee;
-  color: #2e4057;
+  color: #131c26;
 }
 
 /* end nav */
@@ -143,7 +143,7 @@ button {
   padding: 1.5em 2em 1.5em 2em;
   font-size: 25px;
   text-decoration: none;
-  color: #234057;
+  color: #131c26;
 }
 
 #category-sec a:hover {
